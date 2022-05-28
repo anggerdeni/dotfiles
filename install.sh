@@ -2,15 +2,14 @@
 
 CURRENT_DIRECTORY=$(pwd)
 
-echo 'export PATH=$PATH:$CURRENT_DIRECTORY/bin' >> ~/.zshrc
-
 # init scripts
 [ -f $HOME/.xinitrc ] && mv $HOME/.xinitrc $HOME/.xinitrc.bak
 ln -s $CURRENT_DIRECTORY/xinitrc $HOME/.xinitrc
 
-[ -f $HOME/.zshenv ] && mv $HOME/.zshenv $HOME/.zshenv.bak
-ln -s $CURRENT_DIRECTORY/zshenv $HOME/.zshenv
+[ -f $HOME/.zshrc ] && mv $HOME/.zshrc $HOME/.zshrc.bak
+ln -s $CURRENT_DIRECTORY/zshrc $HOME/.zshrc
 
+[ -f $HOME/.personal_zshrc ] && rm $HOME/.personal_zshrc
 [ -f $CURRENT_DIRECTORY/personal-rc-files/personal_zshrc ] && ln -s $CURRENT_DIRECTORY/personal-rc-files/personal_zshrc $HOME/.personal_zshrc
 
 
@@ -27,3 +26,5 @@ ln -s $CURRENT_DIRECTORY/config/nvim $HOME/.config/nvim
 
 [ -d $HOME/.config/tmux ] && mv $HOME/.config/tmux $HOME/.config/tmux.bak
 ln -s $CURRENT_DIRECTORY/config/tmux $HOME/.config/tmux
+
+export PATH=$PATH:$CURRENT_DIRECTORY/bin
