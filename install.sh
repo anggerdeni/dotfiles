@@ -6,6 +6,9 @@ CURRENT_DIRECTORY=$(pwd)
 [ -f $HOME/.xinitrc ] && mv $HOME/.xinitrc $HOME/.xinitrc.bak
 ln -s $CURRENT_DIRECTORY/xinitrc $HOME/.xinitrc
 
+[ -f $HOME/.zprofile ] && mv $HOME/.zprofile $HOME/.zprofile.bak
+ln -s $CURRENT_DIRECTORY/zprofile $HOME/.zprofile
+
 [ -f $HOME/.zshrc ] && mv $HOME/.zshrc $HOME/.zshrc.bak
 ln -s $CURRENT_DIRECTORY/zshrc $HOME/.zshrc
 

@@ -10,3 +10,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - fzf
 - ttc-iosevka
 - vim-plug
+- nnn
+- ucollage
+- ffmpeg
+- ffmpegthumbnailer
