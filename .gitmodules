@@ -1,0 +1,3 @@
+[submodule "personal-rc-files"]
+	path = personal-rc-files
+	url = git@github.com:anggerdeni/personal-rc-files.git
