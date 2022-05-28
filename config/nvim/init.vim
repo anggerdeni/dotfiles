@@ -13,11 +13,11 @@ set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
 
-source /Users/fa-14764/.config/nvim/plugins.vim
-source /Users/fa-14764/.config/nvim/settings.vim
-source /Users/fa-14764/.config/nvim/mapping-default.vim
-source /Users/fa-14764/.config/nvim/mapping-vim-snip.vim
-source /Users/fa-14764/.config/nvim/autocommands.vim
+source $HOME/.config/nvim/plugins.vim
+source $HOME/.config/nvim/settings.vim
+source $HOME/.config/nvim/mapping-default.vim
+source $HOME/.config/nvim/mapping-vim-snip.vim
+source $HOME/.config/nvim/autocommands.vim
 
 :lua require'lspconf/treesitter'
 :lua require'lspconf/completion'
