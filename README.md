@@ -1,3 +1,8 @@
+# How to
+```
+git clone --recursive git@github.com:anggerdeni/dotfiles.git
+```
+
 # Dependency
 
 - neovim
