@@ -15,15 +15,19 @@ ln -s $CURRENT_DIRECTORY/zshrc $HOME/.zshrc
 
 
 # configs
+[ -L $HOME/.config/alacritty ] && rm $HOME/.config/alacritty
 [ -d $HOME/.config/alacritty ] && mv $HOME/.config/alacritty $HOME/.config/alacritty.bak
 ln -s $CURRENT_DIRECTORY/config/alacritty $HOME/.config/alacritty
 
+[ -L $HOME/.config/i3 ] && rm $HOME/.config/i3
 [ -d $HOME/.config/i3 ] && mv $HOME/.config/i3 $HOME/.config/i3.bak
 ln -s $CURRENT_DIRECTORY/config/i3 $HOME/.config/i3
 
+[ -L $HOME/.config/nvim ] && rm $HOME/.config/nvim
 [ -d $HOME/.config/nvim ] && mv $HOME/.config/nvim $HOME/.config/nvim.bak
 ln -s $CURRENT_DIRECTORY/config/nvim $HOME/.config/nvim
 
+[ -L $HOME/.config/tmux ] && rm $HOME/.config/tmux
 [ -d $HOME/.config/tmux ] && mv $HOME/.config/tmux $HOME/.config/tmux.bak
 ln -s $CURRENT_DIRECTORY/config/tmux $HOME/.config/tmux
 
