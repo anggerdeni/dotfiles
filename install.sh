@@ -11,6 +11,9 @@ ln -s $CURRENT_DIRECTORY/xinitrc $HOME/.xinitrc
 [ -f $HOME/.zshenv ] && mv $HOME/.zshenv $HOME/.zshenv.bak
 ln -s $CURRENT_DIRECTORY/zshenv $HOME/.zshenv
 
+[ -f $CURRENT_DIRECTORY/personal-rc-files/personal_zshrc ] && ln -s $CURRENT_DIRECTORY/personal-rc-files/personal_zshrc $HOME/.personal_zshrc
+
+
 
 # configs
 [ -d $HOME/.config/alacritty ] && mv $HOME/.config/alacritty $HOME/.config/alacritty.bak

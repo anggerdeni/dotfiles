@@ -8,8 +8,9 @@ plugins=(git cp virtualenv)
 
 alias vim='nvim'
 
-
 [ -f $ZSH/oh-my-zsh.sh ] && . $ZSH/oh-my-zsh.sh
 [ -f $HOME/.fzf.zsh ] && . $HOME/.fzf.zsh
+[ -f $HOME/.fzf.zsh ] && . $HOME/.fzf.zsh
+[ -f $HOME/.personal_zshrc ] && . $HOME/.personal_zshrc
 
 [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1
