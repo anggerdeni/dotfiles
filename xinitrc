@@ -51,4 +51,5 @@ fi
 nitrogen --restore &
 picom &
 xset r rate 200 25
+flameshot &
 exec i3

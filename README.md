@@ -14,3 +14,4 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - ucollage
 - ffmpeg
 - ffmpegthumbnailer
+- flameshot
