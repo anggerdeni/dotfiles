@@ -15,3 +15,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - ffmpeg
 - ffmpegthumbnailer
 - flameshot
+
+
+# Things I always forgot
+- check keybind using `xev`
