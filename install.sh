@@ -34,4 +34,8 @@ ln -s $CURRENT_DIRECTORY/config/nvim $HOME/.config/nvim
 [ -d $HOME/.config/tmux ] && mv $HOME/.config/tmux $HOME/.config/tmux.bak
 ln -s $CURRENT_DIRECTORY/config/tmux $HOME/.config/tmux
 
+[ -L $HOME/.config/polybar ] && rm $HOME/.config/polybar
+[ -d $HOME/.config/polybar ] && mv $HOME/.config/polybar $HOME/.config/polybar.bak
+ln -s $CURRENT_DIRECTORY/config/polybar $HOME/.config/polybar
+
 export PATH=$PATH:$CURRENT_DIRECTORY/bin

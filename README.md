@@ -5,6 +5,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 
 # Dependency
 
+- i3 (i3-gaps)
 - neovim
 - oh my zsh
 - fzf
@@ -15,6 +16,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - ffmpeg
 - ffmpegthumbnailer
 - flameshot
+- polybar
 
 
 # Things I always forgot
