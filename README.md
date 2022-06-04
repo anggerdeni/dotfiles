@@ -9,7 +9,6 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - neovim
 - oh my zsh
 - fzf
-- ttc-iosevka
 - vim-plug
 - nnn
 - ucollage
@@ -20,6 +19,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - pulseaudio
 - pulseaudio-alsa
 - pulseaudio-bluetooth
+- ttf-inconsolata
 
 
 

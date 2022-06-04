@@ -111,17 +111,17 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Iosevka
-    style: Light
+    family: Inconsolata
+    style: Regular
 
   # Bold font face
   bold:
-    family: Iosevka
+    family: Inconsolata
     style: Medium
 
   # Italic font face
   italic:
-    family: Iosevka
+    family: Inconsolata
     style: "Light Italic"
 
   # Bold italic font face
