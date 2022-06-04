@@ -19,7 +19,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - pulseaudio
 - pulseaudio-alsa
 - pulseaudio-bluetooth
-- ttf-inconsolata
+- ttf-mononoki
 
 
 

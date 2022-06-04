@@ -111,18 +111,18 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Inconsolata
+    family: Mononoki
     style: Regular
 
   # Bold font face
   bold:
-    family: Inconsolata
-    style: Medium
+    family: Mononoki
+    style: Bold
 
   # Italic font face
   italic:
-    family: Inconsolata
-    style: "Light Italic"
+    family: Mononoki
+    style: Italic
 
   # Bold italic font face
   #bold_italic:
