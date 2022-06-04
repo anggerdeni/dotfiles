@@ -17,6 +17,10 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - ffmpegthumbnailer
 - flameshot
 - polybar
+- pulseaudio
+- pulseaudio-alsa
+- pulseaudio-bluetooth
+
 
 
 # Things I always forgot
