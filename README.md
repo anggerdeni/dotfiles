@@ -20,7 +20,8 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - pulseaudio-alsa
 - pulseaudio-bluetooth
 - ttf-mononoki
-
+- gopls, gofmt ?
+- rust, rust_tools, rust_analyzer ?
 
 
 # Things I always forgot
