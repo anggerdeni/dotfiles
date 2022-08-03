@@ -187,6 +187,11 @@ bindcode 107 exec --no-startup-id "flameshot gui"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Assign Workspaces:
+assign [class="Brave-browser"] $ws2
+assign [class="Firefox"] $ws5
+assign [class="TelegramDesktop"] $ws4
 
-exec --no-startup-id i3-msg 'workspace 1; exec i3-sensible-terminal -e tmux new -s main; workspace 1'
-exec --no-startup-id i3-msg 'workspace 2; exec firefox; workspace 1'
+exec --no-startup-id i3-msg 'exec i3-sensible-terminal -e tmux new -s main'
+exec --no-startup-id i3-msg 'exec brave'
+exec --no-startup-id i3-msg 'exec telegram-desktop'
