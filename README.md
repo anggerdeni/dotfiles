@@ -23,6 +23,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - gopls, gofmt ?
 - rust, rust_tools, rust_analyzer ?
 - noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-freefont ttf-ms-fonts ttf-linux-libertine ttf-dejavu ttf-inconsolata ttf-ubuntu-font-family
+- dunst for notification
 
 
 # Things I always forgot

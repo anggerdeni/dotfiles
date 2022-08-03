@@ -38,4 +38,8 @@ ln -s $CURRENT_DIRECTORY/config/tmux $HOME/.config/tmux
 [ -d $HOME/.config/polybar ] && mv $HOME/.config/polybar $HOME/.config/polybar.bak
 ln -s $CURRENT_DIRECTORY/config/polybar $HOME/.config/polybar
 
+[ -L $HOME/.config/dunst ] && rm $HOME/.config/dunst
+[ -d $HOME/.config/dunst ] && mv $HOME/.config/dunst $HOME/.config/dunst.bak
+ln -s $CURRENT_DIRECTORY/config/dunst $HOME/.config/dunst
+
 export PATH=$PATH:$CURRENT_DIRECTORY/bin
