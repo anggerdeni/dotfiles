@@ -6,7 +6,6 @@ polybar-msg cmd quit
 # Otherwise you can use the nuclear option:
 # killall -q polybar
 
-echo "---" | tee -a /tmp/polybar-example.log
 polybar an0nvi 2>&1 | tee -a /tmp/polybar-an0nvi.log & disown
 
 echo "Bars launched..."
