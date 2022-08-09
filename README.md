@@ -9,7 +9,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - neovim
 - oh my zsh
 - fzf
-- vim-plug
+- packer
 - nnn
 - ucollage
 - ffmpeg
