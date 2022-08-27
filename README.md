@@ -33,3 +33,6 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 
 # Things I always forgot
 - check keybind using `xev`
+
+# Broken Things
+- Weird tab behavior: https://github.com/sindresorhus/pure/issues/300#issuecomment-328744993
