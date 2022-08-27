@@ -26,5 +26,10 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - dunst for notification
 
 
+# TODO
+- categorize dependency
+- add dependency for lsp
+
+
 # Things I always forgot
 - check keybind using `xev`
