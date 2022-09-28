@@ -27,3 +27,7 @@ lspconfig.tsserver.setup{
 lspconfig.pyright.setup{
     capabilities = capabilities
 }
+
+lspconfig.dockerls.setup{
+    capabilities = capabilities
+}

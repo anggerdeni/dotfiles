@@ -53,4 +53,5 @@ picom &
 dunst &
 xset r rate 150 25
 flameshot &
+nm-applet &
 exec i3
