@@ -1,6 +1,17 @@
 local nnoremap = require("an0nvi.keymap").nnoremap
+local vnoremap = require("an0nvi.keymap").vnoremap
 
-nnoremap("<leader>b", "<cmd>Ex<cr>")
+nnoremap("<leader>b", ":Ex<cr>")
+vnoremap("<leader>p", "\"_dp")
+vnoremap("<leader>y", "\"+y")
+nnoremap("<leader>y", "\"+y")
+nnoremap("<leader>y", "gg\"+ygg")
+vnoremap("J", ":m '>+1<CR>gv=gv")
+vnoremap("K", ":m '<-2<CR>gv=gv")
+
+
+-- source
+nnoremap("<leader><cr>", "<cmd>so ~/.config/nvim/init.lua<cr>")
 
 -- lsp
 nnoremap("<leader>e", vim.diagnostic.open_float)
@@ -21,5 +32,8 @@ nnoremap("<leader>f", vim.lsp.buf.formatting)
 -- telescope
 nnoremap("<C-p>", "<cmd>lua require('telescope.builtin').find_files()<cr>")
 nnoremap("<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>")
-nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>")
-nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
+
+
+-- quickfixlist
+nnoremap("<C-j>", "<cmd>cnext<cr>")
+nnoremap("<C-k>", "<cmd>cprev<cr>")

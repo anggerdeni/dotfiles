@@ -119,21 +119,6 @@ _G.packer_plugins = {
     path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/cmp-spell",
     url = "https://github.com/f3fora/cmp-spell"
   },
-  ["cmp-tabnine"] = {
-    loaded = true,
-    path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
-    url = "https://github.com/tzachar/cmp-tabnine"
-  },
-  fzf = {
-    loaded = true,
-    path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/fzf",
-    url = "https://github.com/junegunn/fzf"
-  },
-  ["fzf.vim"] = {
-    loaded = true,
-    path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/fzf.vim",
-    url = "https://github.com/junegunn/fzf.vim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/nvim-cmp",

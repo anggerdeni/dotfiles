@@ -23,4 +23,5 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use 'hrsh7th/vim-vsnip'
+    use 'tpope/vim-fugitive'
 end)
