@@ -16,5 +16,6 @@ opt.incsearch = true
 opt.smartindent = true
 
 opt.wrap = false
+opt.colorcolumn = "80"
 
 g.mapleader = " "

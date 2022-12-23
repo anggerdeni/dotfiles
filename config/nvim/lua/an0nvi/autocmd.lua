@@ -18,4 +18,4 @@ function go_full_format(wait_ms)
 end
 
 vim.cmd("autocmd BufWritePre *.go lua go_full_format()")
-vim.cmd("autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync()")
+vim.cmd("autocmd BufWritePre *.rs lua vim.lsp.buf.format()")
