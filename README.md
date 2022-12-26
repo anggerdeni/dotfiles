@@ -4,31 +4,60 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 ```
 
 # Dependency
-
-- i3 (i3-gaps)
-- neovim
-- oh my zsh
-- fzf
-- packer
-- nnn
-- ucollage
+- alacritty
+- calc
+- dbeaver
+- discord
+- docker
+- dunst for notification
 - ffmpeg
 - ffmpegthumbnailer
+- ffmpegthumbnailer 
 - flameshot
+- fzf
+- i3 (i3-gaps)
+- imagemagick
+- inter-font
+- jre17-openjdk
+- kitty
+- kubectl
+- kubectx
+- neofetch
+- neovim
+- nnn
+- noto-fonts
+- noto-fonts-cjk
+- noto-fonts-emoji
+- noto-fonts-extra
+- nvim-packer-git
+- oh-my-zsh
+- packer
 - polybar
 - pulseaudio
 - pulseaudio-alsa
 - pulseaudio-bluetooth
+- pywal
+- refind
+- rofi
+- telegram-desktop
+- ttf-dejavu
+- ttf-freefont
+- ttf-icomoon-feather
+- ttf-inconsolata
+- ttf-iosevka-nerd
+- ttf-liberation
+- ttf-linux-libertine
 - ttf-mononoki
-- gopls, gofmt ?
-- rust, rust_tools, rust_analyzer ?
-- noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-freefont ttf-ms-fonts ttf-linux-libertine ttf-dejavu ttf-inconsolata ttf-ubuntu-font-family
-- dunst for notification
+- ttf-ms-fonts
+- ttf-roboto
+- ttf-ubuntu-font-family
+- ucollage
+- visual-studio-code-bin
+- wget
+- xclip
+- xterm
+- zoom
 
-
-# TODO
-- categorize dependency
-- add dependency for lsp
 
 
 # Things I always forgot
@@ -36,3 +65,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 
 # Broken Things
 - Weird tab behavior: https://github.com/sindresorhus/pure/issues/300#issuecomment-328744993
+
+# Polybar
+- sudo /bin/chgrp video /sys/class/backlight/amdgpu_bl0/brightness
+- sudo /bin/chmod g+w /sys/class/backlight/amdgpu_bl0/brightness
