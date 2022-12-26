@@ -42,4 +42,8 @@ ln -s $CURRENT_DIRECTORY/config/polybar $HOME/.config/polybar
 [ -d $HOME/.config/dunst ] && mv $HOME/.config/dunst $HOME/.config/dunst.bak
 ln -s $CURRENT_DIRECTORY/config/dunst $HOME/.config/dunst
 
+[ -L $HOME/.config/kitty ] && rm $HOME/.config/kitty
+[ -d $HOME/.config/kitty ] && mv $HOME/.config/kitty $HOME/.config/kitty.bak
+ln -s $CURRENT_DIRECTORY/config/kitty $HOME/.config/kitty
+
 export PATH=$PATH:$CURRENT_DIRECTORY/bin
