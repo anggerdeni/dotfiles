@@ -11,7 +11,7 @@ FG="f5f5f5"
 change_color() {
 	# polybar
 	sed -i -e "s/background = #.*/background = #${BG}/g" $PFILE
-	sed -i -e "s/background-alt = #.*/background-alt = #8C${BG}/g" $PFILE
+	sed -i -e "s/background-alt = #.*/background-alt = #00000000/g" $PFILE
 	sed -i -e "s/foreground = #.*/foreground = #${FG}/g" $PFILE
 	sed -i -e "s/foreground-alt = #.*/foreground-alt = #33${FG}/g" $PFILE
 	sed -i -e "s/primary = #.*/primary = $AC/g" $PFILE
