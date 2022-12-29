@@ -22,6 +22,7 @@ git clone --recursive git@github.com:anggerdeni/dotfiles.git
 - kitty
 - kubectl
 - kubectx
+- linux-headers
 - neofetch
 - neovim
 - nnn
