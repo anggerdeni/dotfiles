@@ -1,4 +1,3 @@
-require("an0nvi/remap")
 local is_bootstrap = require("an0nvi/packer")
 
 -- When we are bootstrapping a configuration, it doesn't
@@ -13,7 +12,10 @@ if is_bootstrap then
   print '=================================='
   return
 end
+
 require("an0nvi/setting")
+require("an0nvi/remap")
+require("an0nvi/autocmd")
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`

@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
