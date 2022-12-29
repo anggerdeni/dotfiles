@@ -62,6 +62,9 @@ require('packer').startup(function(use)
   -- Linter
   use 'mfussenegger/nvim-lint'
 
+  -- Make background transparent
+  use 'xiyaowong/nvim-transparent'
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then

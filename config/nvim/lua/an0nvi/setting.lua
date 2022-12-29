@@ -23,7 +23,6 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 
 vim.o.termguicolors = true
-vim.cmd [[colorscheme onedark]]
 
 vim.o.scrolloff = 8
 vim.o.signcolumn = "yes"
@@ -36,3 +35,4 @@ vim.o.mouse = "a"
 
 vim.o.completeopt = 'menuone,noselect'
 
+vim.cmd.colorscheme("onedark")
