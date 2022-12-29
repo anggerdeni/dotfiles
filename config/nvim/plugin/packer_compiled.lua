@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  Undotree = {
+    loaded = true,
+    path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/Undotree",
+    url = "https://github.com/mbbill/Undotree"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -103,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/home/an0nvi/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/theprimeagen/harpoon"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
