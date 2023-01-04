@@ -46,4 +46,7 @@ ln -s $CURRENT_DIRECTORY/config/dunst $HOME/.config/dunst
 [ -d $HOME/.config/kitty ] && mv $HOME/.config/kitty $HOME/.config/kitty.bak
 ln -s $CURRENT_DIRECTORY/config/kitty $HOME/.config/kitty
 
+[ -f $HOME/.tmux.conf ] && rm $HOME/.tmux.conf
+[ -f $CURRENT_DIRECTORY/config/tmux/tmux.conf ] && ln -s $CURRENT_DIRECTORY/config/tmux/tmux.conf $HOME/.tmux.conf
+
 export PATH=$PATH:$CURRENT_DIRECTORY/bin

@@ -35,4 +35,9 @@ vim.o.mouse = "a"
 
 vim.o.completeopt = 'menuone,noselect'
 
+-- Case insensitive searching UNLESS /C or capital in search
+vim.o.ignorecase = true
+vim.o.smartcase = true
+
 vim.cmd.colorscheme("onedark")
+

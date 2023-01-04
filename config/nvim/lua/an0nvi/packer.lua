@@ -71,12 +71,22 @@ require('packer').startup(function(use)
   -- Undotree
   use 'mbbill/Undotree'
 
+  -- markdown preview
+  -- install without yarn or npm
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
+    setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
     plugins(use)
   end
-if is_bootstrap then
+  if is_bootstrap then
     require('packer').sync()
   end
 end)
