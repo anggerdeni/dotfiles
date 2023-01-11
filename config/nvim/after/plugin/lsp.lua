@@ -41,6 +41,12 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
+
+  require('lsp_signature').on_attach({
+    handler_opts = {
+      border = "rounded"
+    }
+  }, bufnr)
 end
 
 -- Enable the following language servers
@@ -52,8 +58,12 @@ local servers = {
   -- clangd = {},
   gopls = {},
   pyright = {},
+  pylsp = {},
   rust_analyzer = {},
   tsserver = {},
+  sqlls = {},
+  bashls = {},
+  omnisharp_mono = {},
 
   sumneko_lua = {
     Lua = {
@@ -82,6 +92,7 @@ mason_lspconfig.setup {
 
 mason_lspconfig.setup_handlers {
   function(server_name)
+    -- omnisharp custom setup
     require('lspconfig')[server_name].setup {
       capabilities = capabilities,
       on_attach = on_attach,
@@ -92,4 +103,3 @@ mason_lspconfig.setup_handlers {
 
 -- Turn on lsp status information
 require('fidget').setup()
-
