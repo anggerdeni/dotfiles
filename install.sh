@@ -49,4 +49,8 @@ ln -s $CURRENT_DIRECTORY/config/kitty $HOME/.config/kitty
 [ -f $HOME/.tmux.conf ] && rm $HOME/.tmux.conf
 [ -f $CURRENT_DIRECTORY/config/tmux/tmux.conf ] && ln -s $CURRENT_DIRECTORY/config/tmux/tmux.conf $HOME/.tmux.conf
 
+[ -L $HOME/.config/powerline/themes/tmux/default.json ] && rm $HOME/.config/powerline/themes/tmux/default.json
+[ -d $HOME/.config/powerline/themes/tmux/default.json ] && mv $HOME/.config/powerline/themes/tmux/default.json $HOME/.config/themes/tmux/default.json.bak
+ln -s $CURRENT_DIRECTORY/config/powerline $HOME/.config/powerline
+
 export PATH=$PATH:$CURRENT_DIRECTORY/bin
