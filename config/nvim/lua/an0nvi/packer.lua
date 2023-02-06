@@ -78,9 +78,6 @@ require('packer').startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end,
   })
 
-  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
-    setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-
   use 'ray-x/lsp_signature.nvim'
   use {
     'nvim-tree/nvim-tree.lua',
@@ -110,6 +107,8 @@ require('packer').startup(function(use)
   if is_bootstrap then
     require('packer').sync()
   end
+
+  use 'f-person/git-blame.nvim'
 end)
 
 return is_bootstrap
