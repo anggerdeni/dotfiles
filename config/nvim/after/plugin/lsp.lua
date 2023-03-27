@@ -58,12 +58,10 @@ local servers = {
   -- clangd = {},
   gopls = {},
   pyright = {},
-  pylsp = {},
   rust_analyzer = {},
   tsserver = {},
   sqlls = {},
   bashls = {},
-  omnisharp_mono = {},
 
   sumneko_lua = {
     Lua = {

@@ -52,6 +52,7 @@ nitrogen --restore &
 picom &
 dunst &
 xset r rate 150 25
+xset s off
 flameshot &
 nm-applet &
 exec i3
