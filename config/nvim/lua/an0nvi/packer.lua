@@ -108,7 +108,7 @@ require('packer').startup(function(use)
     require('packer').sync()
   end
 
-  use 'f-person/git-blame.nvim'
+  -- use 'f-person/git-blame.nvim' -- causing severe lag on relatively large monorepo
 end)
 
 return is_bootstrap

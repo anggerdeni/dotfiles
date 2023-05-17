@@ -16,6 +16,7 @@ end
 require("an0nvi/setting")
 require("an0nvi/remap")
 require("an0nvi/autocmd")
+require("an0nvi/astro")
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
