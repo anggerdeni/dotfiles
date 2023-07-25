@@ -109,6 +109,13 @@ require('packer').startup(function(use)
   end
 
   -- use 'f-person/git-blame.nvim' -- causing severe lag on relatively large monorepo
+  use {
+    'akinsho/flutter-tools.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'stevearc/dressing.nvim', -- optional for vim.ui.select
+    },
+  }
 end)
 
 return is_bootstrap
