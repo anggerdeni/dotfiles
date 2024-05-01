@@ -57,11 +57,18 @@ end
 local servers = {
   -- clangd = {},
   gopls = {},
-  pyright = {},
   rust_analyzer = {},
   tsserver = {},
   sqlls = {},
   bashls = {},
+  pylsp = {
+    plugins = {
+      pycodestyle = {
+        ignore = {'E501'},
+        maxLineLength = 100
+      }
+    }
+  },
 }
 
 -- Setup neovim lua configuration

@@ -9,6 +9,7 @@ ZSH_THEME="avit"
 plugins=(git cp virtualenv)
 
 alias vim='nvim'
+alias v='nvim'
 
 [ -f $ZSH/oh-my-zsh.sh ] && . $ZSH/oh-my-zsh.sh
 [ -f $HOME/.fzf.zsh ] && . $HOME/.fzf.zsh
