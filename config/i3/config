@@ -192,9 +192,8 @@ bindsym $mod+Shift+less move container to output left
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Assign Workspaces:
-assign [class="Brave-browser"] $ws2
 assign [class="firefox"] $ws2
-assign [class="Discord"] $ws4
+assign [class="discord"] $ws4
 
 exec --no-startup-id i3-msg 'exec kitty tmux new -s main'
 exec --no-startup-id i3-msg 'exec firefox'
