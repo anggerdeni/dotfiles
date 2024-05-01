@@ -12,14 +12,7 @@ obsidian.setup({
     {
       name = "personal",
       path = "~/personal/second-brain",
-    },
-    {
-      name = "infra-docs",
-      path = "~/work/infra-documentation",
-      overrides = {
-        notes_subdir = "/",
-      },
-    },
+    }
   },
 
   -- Optional, if you keep notes in a specific subdirectory of your vault.
