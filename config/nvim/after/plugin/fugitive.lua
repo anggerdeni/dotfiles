@@ -1,6 +1,6 @@
 local nmap = function(keys, func, desc)
   if desc then
-    desc = 'LSP: ' .. desc
+    desc = 'Fugitive: ' .. desc
   end
 
   vim.keymap.set('n', keys, func, { desc = desc })

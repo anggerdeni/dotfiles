@@ -1,1 +1,1 @@
-require("an0nvi")
+require('.')
