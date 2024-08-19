@@ -158,7 +158,7 @@ bindsym $mod+Shift+less move container to output left
 
 # Assign Workspaces:
 assign [class="firefox"] $ws2
-assign [class="brave-browser"] $ws2
+assign [class="Brave-browser"] $ws2
 assign [class="discord"] $ws4
 
 exec --no-startup-id i3-msg 'exec kitty tmux new -s main'
@@ -172,3 +172,6 @@ exec xset s off
 exec flameshot &
 exec nm-applet &
 exec dunst &
+
+# DPMS works in three stages: standby, suspend and off
+exec xset dpms 0 0 0
