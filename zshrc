@@ -25,3 +25,4 @@ if [ -f '/home/an0nvi/google-cloud-sdk/path.zsh.inc' ]; then . '/home/an0nvi/goo
 if [ -f '/home/an0nvi/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/an0nvi/google-cloud-sdk/completion.zsh.inc'; fi
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+

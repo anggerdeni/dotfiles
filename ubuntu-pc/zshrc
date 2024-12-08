@@ -22,3 +22,10 @@ export PATH="$PATH:$VOLTA_HOME/bin"
 
 # golang
 export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:${KREW_ROOT:-$HOME/.krew}/bin"
+export PATH=$HOME/.linkerd2/bin:$PATH
+
+# React Native
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
