@@ -32,7 +32,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec ghostty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -161,7 +161,7 @@ assign [class="firefox"] $ws2
 assign [class="Brave-browser"] $ws2
 assign [class="discord"] $ws4
 
-exec --no-startup-id i3-msg 'exec kitty tmux new -s main'
+exec --no-startup-id i3-msg 'exec ghostty'
 exec --no-startup-id i3-msg 'exec firefox'
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
