@@ -11,7 +11,7 @@ obsidian.setup({
   workspaces = {
     {
       name = "personal",
-      path = "~/personal/second-brain",
+      path = "~/personal/fragment",
     }
   },
 
@@ -91,7 +91,7 @@ obsidian.setup({
         suffix = suffix .. string.char(math.random(65, 90))
       end
     end
-    return tostring(os.time()) .. "-" .. suffix
+    return suffix
   end,
 
   templates = {
@@ -106,8 +106,8 @@ obsidian.setup({
   -- URL it will be ignored but you can customize this behavior here.
   follow_url_func = function(url)
     -- Open the URL in the default web browser.
-    vim.fn.jobstart({ "open", url }) -- Mac OS
-    -- vim.fn.jobstart({"xdg-open", url})  -- linux
+    -- vim.fn.jobstart({ "open", url }) -- Mac OS
+    vim.fn.jobstart({"xdg-open", url})  -- linux
   end,
 
   -- Optional, set to true if you use the Obsidian Advanced URI plugin.
@@ -185,6 +185,7 @@ obsidian.setup({
 
   -- Specify how to handle attachments.
   attachments = {
+    confirm_img_paste = true,
     img_folder = "assets",
     -- A function that determines the text to insert in the note when pasting an image.
     -- It takes two arguments, the `obsidian.Client` and a plenary `Path` to the image file.
@@ -231,16 +232,8 @@ local function new_note_on_dir(data, dir)
   vim.api.nvim_command(open_in .. tostring(note.path))
 end
 
-local function new_fleeting_note(data)
-  return new_note_on_dir(data, "notes/01-fleeting-notes")
-end
-
-local function new_literature_note(data)
-  return new_note_on_dir(data, "notes/02-literature-notes")
-end
-
-local function new_permanent_note(data)
-  return new_note_on_dir(data, "notes/03-permanent-notes")
+local function new_inbox(data)
+  return new_note_on_dir(data, "notes/inbox")
 end
 
 local function git_sync()
@@ -250,15 +243,10 @@ local function git_sync()
   vim.api.nvim_echo({ { result, 'Normal' } }, true, {})
 end
 
-vim.api.nvim_create_user_command('ObsidianFleeting', new_fleeting_note, { nargs = '?' })
-vim.api.nvim_create_user_command('ObsidianLiterature', new_literature_note, { nargs = '?' })
-vim.api.nvim_create_user_command('ObsidianPermanent', new_permanent_note, { nargs = '?' })
+vim.api.nvim_create_user_command('ObsidianInbox', new_inbox, { nargs = '?' })
 vim.api.nvim_create_user_command('ObsidianGitSync', git_sync, { nargs = '?' })
 
-nmap("<leader>of", vim.cmd.ObsidianFleeting, "[O]bsidian [F]leeting Note")
-nmap("<leader>on", vim.cmd.ObsidianFleeting, "[O]bsidian [F]leeting Note")
-nmap("<leader>ol", vim.cmd.ObsidianLiterature, "[O]bsidian [L]iterature Note")
-nmap("<leader>op", vim.cmd.ObsidianPermanent, "[O]bsidian [P]ermanent Note")
+nmap("<leader>oi", vim.cmd.ObsidianLiterature, "[O]bsidian [I]nbox")
 nmap("<leader>ot", vim.cmd.ObsidianToday, "[O]bsidian [T]oday daily note")
 nmap("<leader>oy", vim.cmd.ObsidianYesterday, "[O]bsidian [Y]esterday daily note")
 nmap("<leader>og", vim.cmd.ObsidianGitSync, "[O]bsidian [G]it Sync")
