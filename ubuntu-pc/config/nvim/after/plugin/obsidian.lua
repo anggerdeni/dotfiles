@@ -246,7 +246,7 @@ end
 vim.api.nvim_create_user_command('ObsidianInbox', new_inbox, { nargs = '?' })
 vim.api.nvim_create_user_command('ObsidianGitSync', git_sync, { nargs = '?' })
 
-nmap("<leader>oi", vim.cmd.ObsidianLiterature, "[O]bsidian [I]nbox")
+nmap("<leader>oi", vim.cmd.ObsidianInbox, "[O]bsidian [I]nbox")
 nmap("<leader>ot", vim.cmd.ObsidianToday, "[O]bsidian [T]oday daily note")
 nmap("<leader>oy", vim.cmd.ObsidianYesterday, "[O]bsidian [Y]esterday daily note")
 nmap("<leader>og", vim.cmd.ObsidianGitSync, "[O]bsidian [G]it Sync")

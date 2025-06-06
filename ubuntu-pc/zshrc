@@ -21,7 +21,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$PATH:$VOLTA_HOME/bin"
 
 # golang
-export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/.local/go/bin"
 export PATH="$PATH:${KREW_ROOT:-$HOME/.krew}/bin"
 export PATH=$HOME/.linkerd2/bin:$PATH
 
@@ -32,3 +32,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # k8s
 export KUBECONFIG=$HOME/.kube/config:$HOME/personal/kubeconfig/home
+
+# rocm
+export LD_LIBRARY_PATH=/opt/rocm-6.3.4/lib
