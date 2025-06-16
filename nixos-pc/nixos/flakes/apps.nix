@@ -67,7 +67,6 @@
     unzip
     wget
     wl-clipboard
-    yadm
     yazi
     zig
     zip
