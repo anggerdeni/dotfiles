@@ -63,6 +63,7 @@
     ripgrep
     rofi-wayland
     rustup
+    sudo
     starship
     swaynotificationcenter
     telegram-desktop
