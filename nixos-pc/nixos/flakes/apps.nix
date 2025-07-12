@@ -32,6 +32,7 @@
   programs.waybar.enable = true;
   programs.nm-applet.enable = true;
   programs.dconf.enable = true; # for GTK theming to work?
+  programs.nix-ld.enable = true;
   
   # systemPackages
   environment.systemPackages = with pkgs; [
@@ -49,9 +50,11 @@
     hyprlock
     hyprpaper
     hyprshot
+    jq
     kitty
     kubectl
     kubectx
+    libnotify
     nodejs_24
     pavucontrol
     python314
@@ -72,6 +75,7 @@
     zip
     zoom
     inputs.zen-browser.packages."${system}".default
+    # inputs.mach-nix.packages."${system}".default
     catppuccin-cursors.macchiatoSapphire
   ];
 
