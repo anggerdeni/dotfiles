@@ -36,8 +36,10 @@
   
   # systemPackages
   environment.systemPackages = with pkgs; [
+    bind
     brave
     cmake
+    ethtool
     ffmpeg
     ffmpegthumbnailer
     fzf
