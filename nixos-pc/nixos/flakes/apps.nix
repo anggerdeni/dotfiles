@@ -75,7 +75,7 @@
     yazi
     zig
     zip
-    zoom
+    zoom-us
     inputs.zen-browser.packages."${system}".default
     # inputs.mach-nix.packages."${system}".default
     catppuccin-cursors.macchiatoSapphire

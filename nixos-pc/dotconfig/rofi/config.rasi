@@ -1,6 +1,8 @@
 @theme "catppuccin-default"
 configuration {
   display-combi: "🔍 ";
+  display-drun: "🔍 ";
+  display-run: "🔍 ";
   show-icons: true;
   combi-display-format: "{text}";
   font: "Jetbrains Mono 12, Fira Code 12";
