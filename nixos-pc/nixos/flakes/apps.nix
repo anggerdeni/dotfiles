@@ -40,10 +40,12 @@
     brave
     cmake
     ethtool
+    exiftool
     ffmpeg
     ffmpegthumbnailer
     fzf
     gcc
+    gimp3-with-plugins
     gnome-themes-extra
     go
     gopls
@@ -57,7 +59,9 @@
     kubectl
     kubectx
     libnotify
+    loupe
     nodejs_24
+    ntfs3g
     pavucontrol
     python314
     qt6ct # for styling Qt6 apps
@@ -70,6 +74,8 @@
     telegram-desktop
     tmux
     unzip
+    vlc
+    virtualbox
     wget
     wl-clipboard
     yazi
