@@ -5,6 +5,7 @@
       ./hardware-pc.nix
       ./apps.nix
       ./services.nix
+      ./virtualbox.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
