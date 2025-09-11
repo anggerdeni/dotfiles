@@ -15,6 +15,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # so virtualbox can work, not sure if kvm is used anywhere
+  boot.blacklistedKernelModules = [ "kvm_amd" "kvm" ];
+
   # Timezone
   time.timeZone = "Asia/Jakarta";
 
