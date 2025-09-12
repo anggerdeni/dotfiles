@@ -36,6 +36,7 @@
   
   # systemPackages
   environment.systemPackages = with pkgs; [
+    ansible_2_17
     bind
     brave
     cmake
