@@ -42,12 +42,14 @@
     cmake
     ethtool
     exiftool
+    file
     ffmpeg
     ffmpegthumbnailer
     fzf
     gcc
     gimp3-with-plugins
     gnome-themes-extra
+    gnupg
     go
     gopls
     hicolor-icon-theme
@@ -63,6 +65,7 @@
     loupe
     nodejs_24
     ntfs3g
+    openssl
     pavucontrol
     python314
     qt6ct # for styling Qt6 apps
