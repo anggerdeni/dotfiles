@@ -39,6 +39,7 @@
     ansible_2_17
     bind
     brave
+    chezmoi
     cmake
     ethtool
     exiftool
